@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+a:hover {
+	text-decoration: none;
+}
+
+#button-to-top {
+  display: inline-block;
+  background-color: #ff6666;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button-to-top:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+#button-to-top:active {
+  background-color: #555;
+}
+#button-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wallpaper {
+	background-image: url(https://wallpaperplay.com/walls/full/3/e/0/117885.jpg);
+	min-height: 100vh;
+
+	@media (min-width: 768px) {
+		min-height: 20vw;
+	}
+
+	@media (min-width: 1200px) {
+		min-height: 400px;
+	}
+
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.black-background {
+  background: #000000;
+  color: #ffffff;
+  opacity: 0.7;
+  padding: 1%;
+}
+
+.brand {
+  text-align: center;
+}
+
+.brand a {
+  color: #ffffff;
+	font-family: 'Lobster', cursive;
+  transition: all 500ms ease;
+}
+
+.brand i {
+  font-size: 30px;
+  padding: 2%;
+  transition: all 500ms ease-out;
+}
+
+.brand i:hover {
+  color: #ff6666;
+  transition: all 500ms ease-out;
+}
+
+.brand a:hover {
+  color: #ff6666;
+  transition: all 500ms ease-out;
+}
+
+.welcome {
+  margin-top: 15em;
+}
+
+.welcome-message {
+  text-align: center;
+	font-family: 'Lobster', cursive;
+}
+
+.welcome-message .message {
+  font-size: 50px;
+}
+
+.welcome-message a {
+  color: #ffffff;
+}
+
+.welcome-message i {
+  font-size: 55px;
+  animation: sdb05 1.5s infinite;
+  padding: 3%;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}

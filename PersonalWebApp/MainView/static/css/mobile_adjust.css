@@ -1,0 +1,17 @@
+@media(max-width: 800px) {
+  .brand h1 {
+    font-size: 30px;
+  }
+
+  .brand i {
+    font-size: 22px;
+  }
+
+  .welcome-message .message {
+    font-size: 40px;
+  }
+
+  .welcome-message i {
+    font-size: 35px;
+  }
+}
