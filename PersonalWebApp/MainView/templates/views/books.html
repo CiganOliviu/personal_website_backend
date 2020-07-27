@@ -1,10 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Cigan Oliviu-David</title>
-</head>
-<body>
-    <h1>Books</h1>
-</body>
-</html>
+{% extends 'views/base.html' %}
+
+{% block content %}
+
+<div class="books-wallpaper">
+    <div class="black-background">
+      <div class="container">
+        <div class="col-lg-12">
+          <div class="brand" data-aos="fade-down">
+            <a href="/"><h1>Cigan Oliviu David</h1></a>
+            <a href="https://www.facebook.com/cigan.oliviu.31" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> <a href="https://github.com/CiganOliviu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="https://www.instagram.com/ciganoliviu/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="welcome">
+    <div class="black-background">
+      <div class="container">
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="welcome-message">
+            <h1 class="message">Books I highly recommend!</h1>
+            <a href="#" class="scroll-down-books"> <i class="fa fa-arrow-down" aria-hidden="true"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="gray-background" id="books">
+  <div class="container" align="center">
+    <div class="books">
+       <div class="col-md-3" data-aos="flip-right">
+         {% load static %}
+         <img src="{% static 'img/books/clean_code.jpg'%}">
+         <h2>Clean Code</h2>
+         <h4>Bob Martin</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-up">
+         <img src="{% static 'img/books/clean_arhitecture.jpg'%}">
+         <h2>Clean Arhitecture</h2>
+         <h4>Bob Martin</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-down">
+         <img src="{% static 'img/books/clean_coder.jpg'%}">
+         <h2>Clean Coder</h2>
+         <h4>Bob Martin</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-left">
+         <img src="{% static 'img/books/implementation_patterns.jpg'%}">
+         <h2>Implementation Patterns</h2>
+         <h4>Kent Beck</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="white-background">
+  <div class="container" align="center">
+    <div class="books">
+       <div class="col-md-3" data-aos="flip-right">
+         {% load static %}
+         <img src="{% static 'img/books/10x.jpg'%}">
+         <h2>10X Rule</h2>
+         <h4>Grant Cardone</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-up">
+         <img src="{% static 'img/books/bobe.jpg'%}">
+         <h2>Be obsessed or be average</h2>
+         <h4>Grant Cardone</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-down">
+         <img src="{% static 'img/books/millionaire_booklet.jpg'%}">
+         <h2>The millionaire booklet</h2>
+         <h4>Grant Cardone</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-left">
+         <img src="{% static 'img/books/deep_work.jpg'%}">
+         <h2>Deep Work</h2>
+         <h4>Cal Newport</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="gray-background">
+  <div class="container" align="center">
+    <div class="books">
+       <div class="col-md-3" data-aos="flip-right">
+         {% load static %}
+         <img src="{% static 'img/books/20000_leagues.jpg'%}">
+         <h2>20.000 Leagues under the sea</h2>
+         <h4>Jules Verne</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-up">
+         <img src="{% static 'img/books/devils.jpg'%}">
+         <h2>The devils arithmetic</h2>
+         <h4>Jane Yolen</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-down">
+         <img src="{% static 'img/books/funny_story.jpg'%}">
+         <h2>It's kind of a funny story</h2>
+         <h4>Ned Vizzini</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-left">
+         <img src="{% static 'img/books/man_alone.jpg'%}">
+         <h2>Man alone with himself</h2>
+         <h4>Friedrich Nietzsche</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="white-background">
+  <div class="container" align="center">
+    <div class="books">
+       <div class="col-md-3" data-aos="flip-right">
+         {% load static %}
+         <img src="{% static 'img/books/millionaire_success_habits.jpg'%}">
+         <h2>The Millionaire Success Habits</h2>
+         <h4>Dean Graziosi</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-up">
+         <img src="{% static 'img/books/the_one_thing.jpg'%}">
+         <h2>The one thing</h2>
+         <h4>Gary Keller</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-down">
+         <img src="{% static 'img/books/rework.jpg'%}">
+         <h2>Rework</h2>
+         <h4>37Signals</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-left">
+         <img src="{% static 'img/books/soft_skills.jpg'%}">
+         <h2>Soft Skills</h2>
+         <h4>John Sonmez</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+    </div>
+  </div>
+</div>
+<div class="gray-background">
+  <div class="container" align="center">
+    <div class="books">
+       <div class="col-md-3" data-aos="flip-right">
+         {% load static %}
+         <img src="{% static 'img/books/the_art_of_war.jpg'%}">
+         <h2>The art of war</h2>
+         <h4>Sun Tzu</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-up">
+         <img src="{% static 'img/books/on_the_heights_of_despair.jpg'%}">
+         <h2>On the heights of despair</h2>
+         <h4>Emil Cioran</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-down">
+         <img src="{% static 'img/books/tree_grows_in_brooklyn.jpg'%}">
+         <h2>A tree grows in Brooklyn</h2>
+         <h4>Betty Smith</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+       <div class="col-md-3" data-aos="flip-left">
+         <img src="{% static 'img/books/trouble_with_being_born.jpg'%}">
+         <h2>The trouble with being born</h2>
+         <h4>Emil Cioran</h4>
+         <a href="#"><button type="button" class="btn btn-info">Buy it now</button></a>
+       </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer" align="center">
+  <div class="container">
+    <div class="col-lg-12">
+      <h1 data-aos="fade-up">Have questions? Call 1.855.932.8091</h1>
+      <div>&nbsp;</div>
+      <div class="line" data-aos="fade-up"></div>
+      <div>&nbsp;</div>
+      <div class="non-class" data-aos="fade-up">
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <a href="/books/"><li>Books Recommandation</li></a>
+          <a href="/blog/"><li>Personal Blog</li></a>
+        </ul>
+        <div>&nbsp;</div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/cigan.oliviu.31" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> <a href="https://github.com/CiganOliviu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="https://www.instagram.com/ciganoliviu/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div>&nbsp;</div>
+      <h4>Copyright &copy; Cigan Oliviu David all rights reserved</h4>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
