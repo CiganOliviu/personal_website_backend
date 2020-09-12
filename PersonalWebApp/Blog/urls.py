@@ -6,7 +6,8 @@ from . import views
 
 urlpatterns = [
     path('blog/', views.PostList.as_view(), name='blog_name'),
-    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail')
+    path('blog/results/', views.blog_posts_search_view, name='blog_search'),
+    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 ]
 
 if settings.DEBUG:
