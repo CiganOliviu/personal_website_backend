@@ -12,13 +12,13 @@ class Post(models.Model):
 
     sub_title_one = models.CharField(max_length=200, unique=True, default="")
     sub_content_one = models.TextField(default="")
-    
+
     sub_title_two = models.CharField(max_length=200, unique=True, default="")
     sub_content_two = models.TextField(default="")
-    
+
     sub_title_three = models.CharField(max_length=200, unique=True, default="")
     sub_content_three = models.TextField(default="")
-    
+
     sub_title_four = models.CharField(max_length=200, unique=True, default="")
     sub_content_four = models.TextField(default="")
 

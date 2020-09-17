@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import generic
 from django.db.models import Q
 
@@ -11,7 +11,8 @@ def blog_posts_search_view(request):
     query = request.GET.get('q')
 
     if query:
-        results = Post.objects.filter(Q(title__icontains = query))
+        results = Post.objects.filter(Q(title__icontains = query) | Q(introduction__icontains = query) | Q(sub_title_one__icontains = query) | Q(sub_title_two__icontains = query)
+        | Q(sub_title_three__icontains = query) | Q(sub_title_four__icontains = query) | Q(author__username__icontains = query))
     else:
         return redirect('/blog')
 
