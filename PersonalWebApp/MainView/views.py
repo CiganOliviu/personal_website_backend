@@ -1,7 +1,9 @@
 from django.shortcuts import render
 
-def Index(request):
+
+def index(request):
     return render(request, 'views/index.html')
 
-def Books(request):
+
+def books(request):
     return render(request, 'views/books.html')
